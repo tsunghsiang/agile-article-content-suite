@@ -43,7 +43,7 @@ cd agile-article-content-suite
 python -m scripts.package_skill . --output agile-article-content-suite.skill
 ```
 
-## 修改 Sub-Skills
+## 修改Sub-Skills
 
 每個 sub-skill 都是獨立的 Markdown 檔案，直接編輯 `skills/` 底下對應的 `.md` 即可。
 修改後重新打包上傳到 Releases，或直接請 Claude 從 repo 拉取修改。
