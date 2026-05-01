@@ -1,0 +1,9 @@
+# Packaged skill files (build artifacts)
+*.skill
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
