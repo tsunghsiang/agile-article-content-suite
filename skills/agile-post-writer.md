@@ -180,23 +180,15 @@ to connect it to the article topic, but keep the structure identical.
 
 If this resonates with a challenge you're facing right now, let's talk.
 
-👉 Book a free 1-on-1 call: https://calendly.com/uragilecoach/consulting
-⚠️ After booking, send me a message on LinkedIn, IG, Twitter, or Reddit within
-1 hour — otherwise the reservation may be cancelled.
-🎁 Everyone who books gets a free resource that will sharpen your project
-management skills immediately.
+Now I provide free, 1–1 online consulting service. If you have any agile related problems or project management issues, please reserve a web call with me. I would send you a free bonus:《The 3 Golden Metrics From Chaos to Clarity》, as the call is confirmed. 👉 Book now: https://calendly.com/uragilecoach/consulting
 
-If you found value here:
-
-1. 👏 Clap for the article
-2. **Subscribe** for weekly insights
-3. **Follow** me on other platforms
-
-- IG: [@ur_agile_coach](https://www.instagram.com/ur_agile_coach/)
-- Podcast: [Agile Rocket](https://player.soundon.fm/p/7f7dc3df-d738-405c-8cf9-02157a92ec61)
-- YouTube: [Your Agile Coach](https://www.youtube.com/channel/UCzD0wQmD1n4MuTKk-JocACA)
-- LinkedIn: [Tsung-Hsiang Wu](https://www.linkedin.com/in/tsung-hsiang-wu-8542409b/)
-- Twitter: [@ur_agile_coach](https://twitter.com/ur_agile_coach)
+Follow me on other platforms for further updates.
+🌟 Substack: https://reurl.cc/04G7yx
+🌟 Youtube: https://reurl.cc/8D1x94
+🌟 Medium: https://reurl.cc/eXxrnK
+🌟 LinkedIn: https://ssur.cc/pgjLNGN
+🌟 Podcast: https://reurl.cc/6N284V
+🌟 Instagram: https://reurl.cc/8qGkZd
 ```
 
 ---
