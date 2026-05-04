@@ -124,6 +124,22 @@ curiosity gap it creates. Explain WHY this hooks the target reader.]
 [Why this placement]
 ```
 
+### 3-Second Clarity Test
+
+For each illustration concept in the plan, apply this test before proceeding:
+
+> "If a reader sees only this image for 3 seconds with no caption or title,
+> can they identify ONE clear message or feel ONE clear emotion?"
+
+If the answer is no — the concept is too abstract, too busy, or too generic.
+Simplify until it passes. Write the one-sentence answer next to each concept
+in the plan, like this:
+
+```
+**Featured Image — 3-second message:** "Something familiar is breaking apart."
+**Inline 1 — 3-second message:** "There are three distinct stages, and most people are stuck at stage one."
+```
+
 After the plan, write:
 
 > "Does this plan work for you, or would you like to adjust any concept before I render?"
@@ -177,6 +193,74 @@ The featured image must satisfy ALL of the following:
 - Press Shift+F on the image after upload to set it as featured image
 - Press Alt/Opt + click on the [describe focus point] to set focal point
 - Recommended alt text: "[one sentence describing the image content and mood]"
+```
+
+---
+
+## Step 3b — Canva Fallback (Featured Image Only)
+
+**Trigger:** After rendering the SVG featured image, always append this block:
+
+```
+---
+😐 Not satisfied with this image?
+Type "Canva" and I'll generate an alternative directly in your Canva medium folder.
+---
+```
+
+**When the user responds with "Canva" or any dissatisfaction signal**, execute the
+following sequence — do NOT ask for more input, proceed immediately:
+
+### Canva Prompt Construction Rules
+
+Build the `query` for Canva using this formula:
+
+```
+[Emotional tension from article] + [target reader's role] + [one visual metaphor
+that represents the core conflict or transformation] + [mood: urgent / thought-provoking
+/ authoritative] — NO stock photo aesthetics, NO literal office imagery,
+NO text-heavy design, ONE dominant visual element
+```
+
+Examples by article type:
+- AI / technology disruption → "fractured system being rebuilt, engineering leader,
+  dramatic transformation, dark background with sharp contrast, cinematic"
+- Agile process failure → "cracked foundation with new structure emerging, Scrum Master,
+  tension between old and new, bold geometric, high contrast"
+- Leadership insight → "lone figure at a fork in the road, executive decision moment,
+  cinematic lighting, minimalist, deep navy and amber"
+
+Always include in the query:
+- The article's **core tension** (not the topic — the *conflict*)
+- The **target reader's role** as emotional anchor
+- Explicit instruction: **"one dominant visual, no clutter, click-worthy thumbnail"**
+
+### Execution Steps
+
+**Step A — Generate Canva candidates:**
+Call `generate-design` with:
+- `design_type`: `"poster"` (best aspect ratio for Medium featured images)
+- `query`: constructed using the formula above
+- `user_intent`: "Generate featured image for Medium article: [article title]"
+
+**Step B — User selects a candidate:**
+After the widget renders, write:
+```
+👆 Pick the design you prefer — then tell me which one (1, 2, or 3)
+and I'll save it to your Canva medium folder with the article title.
+```
+
+**Step C — Create and move the design:**
+Once the user picks a candidate:
+1. Call `create-design-from-candidate` with the `job_id` and `candidate_id`
+2. Call `move-item-to-folder` with:
+   - `item_id`: the `design_id` returned from step 1
+   - `to_folder_id`: `FAFcT0EuO00` (your "medium" folder)
+3. Confirm to the user:
+```
+✅ Saved to your Canva "medium" folder as "[article title]".
+Open it in Canva to make any final tweaks, then download as PNG (1600×900)
+and upload to Medium as your featured image.
 ```
 
 ---
@@ -254,6 +338,7 @@ is always better.
 ## Quality Checklist — Verify Before Rendering Each Visual
 
 **Featured image:**
+- [ ] 3-second clarity test passed — one message or emotion identifiable without text
 - [ ] Canvas is 1600 × 900 (viewBox 1600 900)
 - [ ] All essential content within safe zone (x: 320–1280)
 - [ ] Max 5 words of text on image
@@ -300,4 +385,8 @@ Your Medium post and illustration set are complete. Before publishing:
 
 If you'd like to adjust any illustration's concept or style, just describe what you want
 changed and I'll re-render it.
+
+For the **featured image**, you can also type **"Canva"** at any point to generate
+an alternative directly in your Canva medium folder — useful when you want a more
+photographic or template-driven look that SVG can't achieve.
 ```
