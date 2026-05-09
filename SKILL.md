@@ -72,4 +72,4 @@ Each sub-skill ends with a handoff prompt that guides the user to the next stage
 - `skills/agile-topic-scout.md` — Topic discovery: HTML artifact with 10 researched agile topics
 - `skills/agile-article-writer.md` — Brief + SEO package: 7-section outline + Medium publishing fields
 - `skills/agile-post-writer.md` — Full Medium post in @uragilecoach voice and style
-- `skills/agile-illustration-generator.md` — Cover image + 2–4 inline SVG/HTML illustrations
+- `skills/agile-illustration-generator.md` — Cover image + 2–4 inline illustrations, all generated in Canva (twitter_post 1600×900 landscape) and saved to the user's "medium" folder

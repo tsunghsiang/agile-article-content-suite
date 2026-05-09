@@ -11,7 +11,7 @@ A bundled Claude skill suite for end-to-end agile content creation on Medium.
         ↓ /agile-post-writer
 [3] agile-post-writer          → 以 @uragilecoach 語氣撰寫完整 Medium 文章
         ↓ /agile-illustration-generator
-[4] agile-illustration-generator → 產出封面圖 + 文中插圖（SVG/HTML）
+[4] agile-illustration-generator → 產出封面圖 + 文中插圖（Canva twitter_post 1600×900，存至 medium 資料夾）
 ```
 
 ## 檔案結構
